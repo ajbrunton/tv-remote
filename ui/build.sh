@@ -12,6 +12,3 @@ cp dist/css/app.*.css ../static/css/app.css
 cp dist/js/app.*.js ../static/js/app.js 
 cp dist/js/chunk-vendors.*.js ../static/js/chunk-vendors.js
 
-# Run flask server
-# cd ..
-# python3 -m flask run --host=10.1.1.120
