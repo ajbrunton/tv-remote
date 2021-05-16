@@ -1,11 +1,11 @@
-from flask import Flask
+from flask import Flask, render_template
 from helpers import send_command
 
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return 'Hello, World!'
+def index():
+    return render_template('index.html')
 
 @app.route('/command/<cmd>')
 def command(cmd):
